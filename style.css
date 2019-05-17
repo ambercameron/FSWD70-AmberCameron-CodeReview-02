@@ -4,7 +4,10 @@ body {
   margin: 0px; }
 
 header {
-  background-color: #5E1314; }
+  background-color: #5E1314;
+  position: sticky;
+  top: 0;
+  z-index: 1; }
 
 .header {
   padding: 15px;
@@ -137,7 +140,7 @@ h2 {
   width: 100%; }
 
 #news3 div p {
-  font-size: 1.5vw;
+  font-size: 2vw;
   text-align: wrap;
   padding-left: 10px;
   position: absolute;
@@ -167,6 +170,17 @@ footer {
 
 .mobileonly {
   display: none; }
+
+h4 {
+  font-size: 8vw;
+  text-align: center; }
+
+#NASA {
+  color: black;
+  padding: 5%; }
+  #NASA a {
+    color: black;
+    text-decoration: underline; }
 
 @media screen and (max-width: 800px) {
   .maindisplay {
@@ -249,5 +263,61 @@ footer {
     position: static;
     display: block;
     text-align: center; } }
+@media screen and (max-width: 1200px) {
+  #mobonly {
+    display: initial; }
+
+  .mobileonly {
+    display: none; }
+
+  section {
+    margin: 0px; }
+
+  #news1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 95%;
+    font-size: 2.5vw; }
+
+  #news1 div {
+    width: 45%;
+    height: 45%;
+    position: relative;
+    margin: 1.5%; }
+
+  #news1 div img {
+    width: 100%; }
+
+  #news1 div p {
+    font-size: 2.8vw; }
+
+  h1 {
+    width: 100%; }
+
+  h2 {
+    width: 100%; }
+
+  .bannerall {
+    display: none; }
+
+  footer ul {
+    text-align: center; }
+  footer img {
+    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  footer p {
+    margin: 0;
+    position: static;
+    display: block;
+    text-align: center; }
+
+  #news2 {
+    width: 95%; }
+
+  #news3 {
+    width: 95%; } }
 
 /*# sourceMappingURL=style.css.map */
