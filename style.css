@@ -30,11 +30,15 @@ section {
   font-size: 1.5vw; }
 
 h1 {
+  margin: 20px;
   background-color: #DEDEDE;
   color: #4B4B4B;
-  padding-left: 10px; }
+  padding-left: 10px;
+  font-size: 4vw; }
 
 aside {
+  margin: 20px;
+  margin-top: 10px;
   display: inline;
   float: right;
   width: 12%; }
@@ -43,10 +47,12 @@ aside img {
   width: 100%; }
 
 #news1 {
+  margin: 20px;
+  font-size: 1.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 87%; }
+  width: 82%; }
 
 #news1 div {
   width: 30%;
@@ -63,16 +69,22 @@ aside img {
   top: 65%;
   background-color: black; }
 
+#mobonly {
+  display: none; }
+
 h2 {
+  margin: 20px;
   background-color: #DEDEDE;
   color: #4B4B4B;
-  width: calc(87% - 10px);
-  padding-left: 10px; }
+  width: calc(82% - 10px);
+  padding-left: 10px;
+  font-size: 4vw; }
 
 #news2 {
+  margin: 20px;
   display: flex;
   justify-content: space-between;
-  width: 87%; }
+  width: 82%; }
 
 #news2 div {
   width: 30%;
@@ -100,10 +112,11 @@ h2 {
   width: 100%; }
 
 #news3 {
+  margin: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  width: 87%;
+  width: 82%;
   font-size: 2.3vw; }
 
 #news3 div {
@@ -126,7 +139,111 @@ h2 {
   background-color: black; }
 
 footer {
+  display: block;
   background-color: black;
-  list-style: none; }
+  list-style: none;
+  padding: 0px;
+  height: 150px;
+  position: relative; }
+  footer ul {
+    text-align: left; }
+  footer img {
+    position: absolute;
+    right: 15px; }
+  footer p {
+    margin: 0;
+    position: absolute;
+    top: 80%;
+    left: 40%; }
+
+@media screen and (max-width: 800px) {
+  #mobonly {
+    display: initial; }
+
+  section {
+    margin: 0px; }
+
+  #news1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 85%;
+    font-size: 2.5vw; }
+
+  #news1 div {
+    width: 45%;
+    height: 45%;
+    position: relative;
+    margin: 1.5%; }
+
+  #news1 div img {
+    width: 100%; }
+
+  h3 {
+    width: 100%; }
+
+  #news3 {
+    max-width: 100%; }
+
+  #news2 {
+    max-width: 100%; }
+
+  #mobl1 {
+    margin: 2%;
+    top: 14%;
+    left: 0;
+    min-width: 30%; }
+
+  #mobl2 {
+    margin: 2%;
+    top: 38%;
+    left: 0;
+    min-width: 30%; }
+
+  #mobl3 {
+    margin: 2%;
+    top: 62%;
+    left: 0;
+    min-width: 45%; }
+
+  #mobl4 {
+    margin: 2%;
+    top: 86%;
+    left: 0;
+    min-width: 40%; }
+
+  #mobr1 {
+    margin: 2%;
+    top: 14%;
+    float: right;
+    min-width: 30%; }
+
+  #mobr2 {
+    margin: 2%;
+    top: 38%;
+    float: right;
+    min-width: 45%; }
+
+  #mobr3 {
+    margin: 2%;
+    top: 62%;
+    float: right;
+    min-width: 45%; }
+
+  .bannerall {
+    display: none; }
+
+  footer ul {
+    text-align: center; }
+  footer img {
+    position: static;
+    display: block;
+    margin-left: auto;
+    margin-right: auto; }
+  footer p {
+    margin: 0;
+    position: static;
+    display: block;
+    text-align: center; } }
 
 /*# sourceMappingURL=style.css.map */
