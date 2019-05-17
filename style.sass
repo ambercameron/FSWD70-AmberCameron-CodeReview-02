@@ -38,6 +38,12 @@ h1
 	padding-left: 10px
 	font-size: 4vw
 
+#date
+	display: block
+	width: 100%
+	color: #4B4B4B
+	text-align: right
+
 aside
 	margin: 20px
 	margin-top: 10px
@@ -64,6 +70,7 @@ aside img
 	width: 100%
 
 #news1 div p
+	font-size: 1.5vw
 	text-align: wrap
 	padding-left: 10px
 	position: absolute
@@ -97,6 +104,7 @@ h2
 	height: 85%
 
 #news2 div p
+	font-size: 1.5vw
 	text-align: wrap
 	padding-left: 10px
 	position: absolute
@@ -131,6 +139,7 @@ h2
 	width: 100%
 	
 #news3 div p
+	font-size: 1.5vw
 	text-align: wrap
 	padding-left: 10px
 	position: absolute
@@ -158,9 +167,17 @@ footer
 		top: 80%
 		left: 40%
 
+.mobileonly
+	display: none
+
 @media screen and (max-width: 800px)
+	.maindisplay
+		display: none
 	
 	#mobonly
+		display: initial
+
+	.mobileonly
 		display: initial
 	
 	section
@@ -170,7 +187,7 @@ footer
 		display: flex
 		flex-wrap: wrap
 		align-items: center
-		width: 85%
+		width: 95%
 		font-size: 2.5vw
 
 	#news1 div
@@ -182,56 +199,41 @@ footer
 	#news1 div img
 		width: 100%
 
-	h3
+	#news1 div p
+		font-size: 2.8vw
+	
+	h1
+		width: 100%
+	h2
 		width: 100%
 
-	#news3
-		max-width: 100%
+	.mobileonly
+		margin: 20px
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		width: 95%
+		font-size: 2.3vw
 
-	#news2
-		max-width: 100%
+	.mobileonly div
+		width: 45%
+		min-height: 20%
+		position: relative
+		margin-bottom: 7%
 
-	#mobl1
-		margin: 2%
-		top: 14%
-		left: 0
-		min-width: 30%
-
-	#mobl2
-		margin: 2%
-		top: 38%
-		left: 0
-		min-width: 30%
-
-	#mobl3
-		margin: 2%
-		top: 62%
-		left: 0
-		min-width: 45%
-
-	#mobl4
-		margin: 2%
-		top: 86%
-		left: 0
-		min-width: 40%
-
-	#mobr1
-		margin: 2%
-		top: 14%
-		float: right
-		min-width: 30%
-
-	#mobr2
-		margin: 2%
-		top: 38%
-		float: right
-		min-width: 45%
-
-	#mobr3
-		margin: 2%
-		top: 62%
-		float: right
-		min-width: 45%
+	.mobileonly img
+		width: 100%
+		
+	.mobileonly div p
+		font-size: 2.8vw
+		text-align: wrap
+		padding-left: 10px
+		position: absolute
+		bottom: -10%
+		top: 65%
+		left: 0%
+		right: 0%
+		background-color: black
 
 	.bannerall
 		display: none
